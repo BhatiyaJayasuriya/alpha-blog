@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US" />
+<head>
+<title>Welcome to Alpha Blog</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="" type="text/css" />
+<style>
+  body {
+    margin: 0; padding: 0;
+    font: 400 12px/19px Arial, Helvetica, Verdana, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; color: blue;
+  }
+  
+  .nav {
+    margin: 5px 0 5px 10px;
+  }
+  
+  .nav ul {
+    list-style-type: none; margin: 0; padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+  }
+  
+  .nav li a {
+    padding: 0 15px 5px 0;
+  }
+  
+  .div-image {
+    width:100%; height:238px; padding: 5px;
+    background-color: #585858; 
+    background-image: image_url('header.jpg');
+  }
+  
+  .div-image h1 {
+    text-align:left; line-height: 64px;
+    font-size: 4em; margin-left: 15px;
+    color: #fff;
+  }
+  
+  .content-main {
+    width: 60%; margin: 0 auto;
+  }
+  
+  footer {
+    text-align:center; clear:both; background-color: #585858; padding: 5px 0; color: #fff
+  }
+</style>
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+      </ul>
+    </nav>
+    <div class="div-image">
+      <h1>Welcome to Alpha Blog</h1>
+    </div>
+  </header>
+  <!-- main section -->
+  <main>
+    <section>
+      <div class="content-main">
+        <h3>Welcome!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet
+        hendrerit ipsum. Nulla finibus scelerisque tortor, sit amet efficitur 
+        dui consectetur vitae. Sed vitae nibh eget urna suscipit laoreet. 
+        Maecenas vehicula justo non mi porttitor, quis fringilla quam posuere. 
+        Sed ex nisi, hendrerit non aliquet ut, egestas suscipit nisi. Pellentesque 
+        luctus dapibus eros, at consequat leo accumsan a.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet
+        hendrerit ipsum. Nulla finibus scelerisque tortor, sit amet efficitur 
+        dui consectetur vitae. Sed vitae nibh eget urna suscipit laoreet. 
+        Maecenas vehicula justo non mi porttitor, quis fringilla quam posuere. 
+        Sed ex nisi, hendrerit non aliquet ut, egestas suscipit nisi. Pellentesque 
+        luctus dapibus eros, at consequat leo accumsan a.</p>
+      </div>
+    </section>
+  </main>
+  <!-- footer section -->
+  <footer>
+    <p>Ruby on Rails: Project One</p>
+  </footer>
+</body>
+</html>
