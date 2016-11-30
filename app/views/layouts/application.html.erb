@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alpha Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
+    body {
+      max-width: 960px; margin: 0 auto; padding: 0;
+      font: 400 12px/19px Arial, Helvetica, Verdana, sans-serif;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline; color: blue;
+    }
+    
+    .nav {
+      margin: 5px 0 5px 10px;
+      float: left;
+    }
+    
+    .nav ul {
+      list-style-type: none; margin: 0; padding: 0;
+    }
+    
+    .nav li {
+      display: inline-block;
+    }
+    
+    .nav li a {
+      padding: 0 15px 5px 0;
+    }
+    
+    .header-image {
+      clear: left;
+      position: relative;
+      background-color: #585858;
+      height: 238px;
+    }
+    
+    .top-left {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      color: #fff;
+      font-size: 4em;
+      font-weight: bold;
+    }
+    
+    .content-main {
+      width: 60%; margin: 0 auto;
+    }
+    
+    footer {
+      clear:both; 
+      width: 100%;
+      height: auto;
+    }
+    
+    .footer-left, .footer-right {
+      color: #fff;
+    }
+    
+    .footer-left {
+      float: left;
+      width: ;
+      padding: 5px 0 5px 15px; 
+    }
+    
+    .footer-right {
+      float: right;
+      width: ;
+      padding: 5px 15px 5px 0;
+      text-align: right;
+    }
+    
+    .footer-div {
+      background-color: #585858; padding: 26px 0;
+    }
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
