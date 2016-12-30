@@ -85,7 +85,11 @@
   </style>
 </head>
 <body>
-
+  <% flash.each do |key, msg| %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
 <%= yield %>
 
 </body>
