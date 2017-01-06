@@ -92,7 +92,7 @@
     <nav class="nav">
       <ul>
         <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Alpha Blog', articles_path %></li>
       </ul>
     </nav>
     <div class="header-image">
@@ -104,11 +104,7 @@
   <main>
     <section>
       <div class="content-main">
-        <% flash.each do |key, msg| %>
-          <ul>
-            <li><%= msg %></li>
-          </ul>
-        <% end %>
+        <%= render 'layouts/messages' %>
         <%= yield %>
       </div>
     </section>
