@@ -1,2 +1,65 @@
+$navbar-default-bg: #080C1A;
+$navbar-default-link-color: #fff;
+$navbar-default-link-hover-color: #777;
+$navbar-default-brand-color: $navbar-default-link-color;
+$navbar-default-brand-hover-color: darken($navbar-default-brand-color, 30%);
+$extra-bold: 700;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: $extra-bold;
+}
+
+.jumbotron {
+  background-image: asset-url('landscape_blue_ocean.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1 {
+  margin-bottom: 50px;
+  font-weight: $extra-bold;
+}
+
+.jumbotron h1, .jumbotron p {
+  color: #fff;
+}
+
+.btn-lg-custom {
+  font-size: 1.7em;
+  margin-top: 15px;
+  background-color: #003975;
+}
+
+.btn-lg-custom:hover {
+  background-color: #04102A;
+}
+
+footer {
+    border-top: 1px solid #080C1A;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+footer small { 
+  float: left; 
+}
+
+footer ul { 
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+    float: right;
+    padding-right: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
