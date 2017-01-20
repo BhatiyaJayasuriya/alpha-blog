@@ -1,7 +1,20 @@
-<h1>Showing article: <%= @article.title %></h1>
+<div class='row'>
+  <div class='col-sm-12 text-center'>
+    <h2><strong>Title: </strong><%= @article.title %></h2>
+  </div>
+  <div class='well col-sm-8 col-sm-offset-2'>
+    <h4 class='text-center description'><strong>Description:</strong></h4>
+    <hr>
+    <%= @article.description %>
+    <div class='article-actions'>
+      <%= link_to 'Edit this article', edit_article_path(@article), class: 'btn btn-xs btn-primary' %>
+      <%= link_to 'Delete this article', article_path(@article), 
+                                  method: :delete,
+                                  data: { confirm: "Are you sure you want to delete article: '#{@article.title}' ?" },
+                                  class: 'btn btn-xs btn-danger' %>
+      <%= link_to 'View all articles', articles_path, class: 'btn btn-xs btn-success' %>
+    </div>
+  </div>
+</div>
 
-<p><strong>Title: </strong><%= @article.title %></p>
-<p><strong>Description: </strong><%= @article.description %></p>
 
-<%= link_to 'Edit Article', edit_article_path(@article) %> |
-<%= link_to 'Back to article listing', articles_path %>
