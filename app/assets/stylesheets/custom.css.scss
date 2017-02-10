@@ -43,11 +43,6 @@ $bold: 600;
 }
 
 /* main section */
-.article-actions {
-  border-top: 1px solid #DDE1E4;
-  padding-top: 5px;
-  margin-top: 15px;
-}
 
 .description {
   margin-top: -10px;
@@ -64,8 +59,20 @@ $bold: 600;
 
 .article-body {
   border-top: 1px solid #DDE1E4;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
+
+.article-meta-details {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.article-actions {
+  border-top: 1px solid #DDE1E4;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
 
 /* footer section*/
 footer {
