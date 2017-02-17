@@ -26,7 +26,9 @@
     
       <div class='form-group'>
         <div class='col-sm-offset-2 col-sm-8'>
-          <%= f.submit(@user.new_record? ? 'Sign up' : 'Update account', class: 'btn btn-primary btn-lg-custom') %>
+          <!-- <%= f.submit(@user.new_record? ? 'Sign up' : 'Update account', class: 'btn btn-primary btn-lg-custom') %> -->
+          <%= f.submit(@user.new_record? ? 'Sign up' : 'Update account', 
+              class:(@user.new_record? ? 'btn btn-primary btn-lg-custom' : 'btn btn-primary btn-lg btn-success')) %>
         </div>
       </div>
     <% end %>
