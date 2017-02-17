@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
+  # index, show, new, edit, create, update and destroy
   def new
     @user = User.new
+  end
+  
+  def edit
+    @user = User.find(params[:id])
   end
   
   def create
@@ -12,6 +17,16 @@ class UsersController < ApplicationController
       # may be render will be a better choice
     else
       render 'new'
+    end
+  end
+    
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:success] = "Your account was updated successfully"
+      redirect_to articles_path
+    else
+      render 'edit'
     end
   end
     
