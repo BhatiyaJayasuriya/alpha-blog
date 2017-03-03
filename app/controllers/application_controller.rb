@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
   
   def logged_in?
-    !!current_user
+    !!current_user # !! Operator convert anything to a boolean
   end
   
   def require_user
