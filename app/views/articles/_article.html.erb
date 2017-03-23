@@ -13,6 +13,9 @@
               <%= time_ago_in_words(article.created_at) %> ago, 
               Updated on: <%= time_ago_in_words(article.updated_at) %> ago 
             </small>
+            <% if article.categories.any? %>
+              <p><small>Categories: <%= render article.categories %></small></p>
+            <% end %>
           </div>
         </div>
         <% if logged_in? && (current_user == article.user || current_user.admin?) %>

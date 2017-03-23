@@ -17,7 +17,10 @@
     </ul>
     <hr>
     <h4 class='description'><strong><%= @article.title %></strong></h4>
-    <%= @article.description %>
+    <%= simple_format(@article.description) %> <!-- Returns text transformed into HTML using simple formatting rules -->
+    <% if @article.categories.any? %>
+      <p><small>Categories: <%= render @article.categories %></small></p>
+    <% end %>
     <div class='article-actions'>
       <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
         <%= link_to 'Edit this article', edit_article_path(@article), class: 'btn btn-xs btn-primary' %>

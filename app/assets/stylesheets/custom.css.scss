@@ -78,6 +78,16 @@ $bold: 600;
   padding-left: 0;
 }
 
+.custome-badge {
+  background-color: #ddd;
+  text-transform: uppercase;
+  font-weight: $bold;
+}
+
+.input-checkbox input {
+  width: auto !important;
+}
+
 /* footer section*/
 footer {
     border-top: 1px solid #080C1A;
