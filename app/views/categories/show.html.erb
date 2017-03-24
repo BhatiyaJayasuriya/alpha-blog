@@ -3,9 +3,9 @@
 <div class='text-center'>
   <% if logged_in? && current_user.admin? %>
     <div class='row'>
-      <span class='badge custome-badge'>
-        <%= link_to 'Edit category', edit_category_path(@category) %>
-      </span>
+      <%= link_to 'Edit category name', 
+          edit_category_path(@category),  
+          class: 'btn btn-primary btn-xs' %>
     </div>
   <% end %>
   <%= will_paginate @category_articles %>
