@@ -31,7 +31,7 @@ class CategoriesController < ApplicationController
   
   def update
     @category = Category.find(params[:id])
-    if @category.update(caregory_params)
+    if @category.update(category_params)
       flash[:success] = "Category was successfully updated"
       redirect_to category_path(@category)
     else
